@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>申込URLの有効期限が切れています | JBレンタカー石巻店</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+      background: #f0f4f8;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      max-width: 480px;
+      width: 100%;
+      padding: 48px 40px 40px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 180px;
+      margin-bottom: 32px;
+    }
+
+    .expired-badge {
+      display: inline-block;
+      background: #fff0f0;
+      color: #e53e3e;
+      border: 1.5px solid #feb2b2;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: bold;
+      padding: 4px 16px;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      font-size: 20px;
+      color: #1a202c;
+      font-weight: bold;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #718096;
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #e2e8f0;
+      margin-bottom: 28px;
+    }
+
+    .contact-title {
+      font-size: 13px;
+      color: #a0aec0;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+    }
+
+    .tel {
+      font-size: 30px;
+      font-weight: bold;
+      color: #2b6cb0;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .tel:hover {
+      color: #2c5282;
+    }
+
+    .free-label {
+      display: inline-block;
+      background: #ebf8ff;
+      color: #2b6cb0;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 2px 10px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+
+    .hours {
+      background: #f7fafc;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 28px;
+      text-align: left;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #4a5568;
+      padding: 4px 0;
+      line-height: 1.6;
+    }
+
+    .hours-row .label {
+      color: #718096;
+      min-width: 110px;
+    }
+
+    .hours-note {
+      font-size: 12px;
+      color: #e53e3e;
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    .or-divider {
+      font-size: 13px;
+      color: #a0aec0;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .or-divider::before,
+    .or-divider::after {
+      content: '';
+      display: inline-block;
+      width: 80px;
+      height: 1px;
+      background: #e2e8f0;
+      vertical-align: middle;
+      margin: 0 12px;
+    }
+
+    .redirect-box {
+      background: #ebf8ff;
+      border: 1.5px solid #bee3f8;
+      border-radius: 10px;
+      padding: 14px 20px;
+      margin-bottom: 20px;
+    }
+
+    .redirect-box p {
+      font-size: 13px;
+      color: #2b6cb0;
+      margin-bottom: 8px;
+    }
+
+    .progress-bar-wrap {
+      background: #bee3f8;
+      border-radius: 999px;
+      height: 6px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 6px;
+      background: #2b6cb0;
+      border-radius: 999px;
+      width: 100%;
+      animation: countdown 10s linear forwards;
+    }
+
+    @keyframes countdown {
+      from { width: 100%; }
+      to { width: 0%; }
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2b6cb0;
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.2s;
+      width: 100%;
+    }
+
+    .btn:hover {
+      background: #2c5282;
+    }
+
+    .counter {
+      font-weight: bold;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="logo.png" alt="JBレンタカー" class="logo">
+
+    <div class="expired-badge">⚠ URLの有効期限切れ</div>
+
+    <h1>この申込URLは<br>有効期限が切れています</h1>
+
+    <p class="description">
+      お送りしたURLの有効期限が過ぎているため<br>
+      このページからはお申し込みいただけません。<br>
+      お電話または公式サイトより再度お問い合わせください。
+    </p>
+
+    <hr class="divider">
+
+    <p class="contact-title">お電話でのお問い合わせ</p>
+
+    <a href="tel:0120204625" class="tel">0120-204-625</a>
+    <span class="free-label">📞 通話無料</span>
+
+    <div class="hours">
+      <div class="hours-row">
+        <span class="label">月〜金</span>
+        <span>9:00 〜 18:00</span>
+      </div>
+      <div class="hours-row">
+        <span class="label">土・日</span>
+        <span>10:00 〜 16:00</span>
+      </div>
+      <p class="hours-note">※ 水曜・祝日は休業</p>
+    </div>
+
+    <div class="or-divider">または</div>
+
+    <div class="redirect-box">
+      <p><span class="counter" id="count">10</span>秒後に公式サイトへ移動します</p>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+
+    <a href="https://jb-rentacar.com/miyagi/#contact" class="btn">今すぐ公式サイトへ →</a>
+  </div>
+
+  <script>
+    let count = 10;
+    const el = document.getElementById('count');
+    const timer = setInterval(() => {
+      count--;
+      el.textContent = count;
+      if (count <= 0) {
+        clearInterval(timer);
+        window.location.href = 'https://jb-rentacar.com/miyagi/#contact';
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
