@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>運転免許証申請完了</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo-container {
+            margin: 20px 0 40px;
+        }
+
+        .logo {
+            width: 180px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .success-icon {
+            font-size: 60px;
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #0056b3;
+            margin: 10px 0 30px;
+        }
+
+        .message-box {
+            background-color: #ffffff;
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f0f0f0;
+            position: relative;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .message-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background-color: #007BFF;
+        }
+
+        .message {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #444;
+        }
+
+        .message strong {
+            color: #007BFF;
+            font-weight: 600;
+        }
+
+        .notice-box {
+            background-color: #fff8e1;
+            border: 1px solid #ffe082;
+            border-radius: 12px;
+            padding: 25px 30px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .notice-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #e65100;
+            margin-bottom: 12px;
+        }
+
+        .notice-box ul {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 15px;
+            color: #555;
+            line-height: 2;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            padding: 25px;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            border: 1px solid #eee;
+        }
+
+        .contact-info h2 {
+            font-size: 22px;
+            color: #0056b3;
+            margin-top: 0;
+            position: relative;
+            display: inline-block;
+        }
+
+        .contact-info h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 3px;
+            background-color: #0056b3;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .contact-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 28px;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in { animation: fadeIn 0.8s ease forwards; }
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="logo-container fade-in">
+            <img src="logo.png" alt="JB レンタカー ロゴ" class="logo">
+        </div>
+
+        <div class="fade-in delay-1">
+            <div class="success-icon">✓</div>
+            <div class="title">運転免許証の申請が完了しました</div>
+        </div>
+
+        <div class="message-box fade-in delay-2">
+            <div class="message">
+                <p>運転免許証のご申請を受け付けました。<br>
+                内容を確認の上、<strong>担当スタッフよりご連絡</strong>いたします。</p>
+                <p>確認・審査には数営業日いただく場合がございます。あらかじめご了承ください。</p>
+            </div>
+        </div>
+
+        <div class="notice-box fade-in delay-3">
+            <div class="notice-title">⚠️ ご注意事項</div>
+            <ul>
+                <li>申請内容に不備がある場合、再提出をお願いする場合があります。</li>
+                <li>免許証の有効期限・記載情報に誤りがないかご確認ください。</li>
+                <li>申請状況は担当スタッフまでお問い合わせください。</li>
+            </ul>
+        </div>
+
+        <div class="contact-info fade-in delay-4">
+            <h2>お問い合わせ</h2>
+            <p>ご不明な点がございましたら、お気軽にお問い合わせください。</p>
+            <a href="tel:0120-204-625" class="contact-button">📞 フリーダイヤル: 0120-204-625</a>
+        </div>
+
+    </div>
+</body>
+</html>
